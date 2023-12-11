@@ -21,6 +21,6 @@ jobs:
 
       - name: Compile and Run HelloWorld
         run: |
-          cd src/main/java/org/example/
-          javac Main.java
-          java Main
+          mkdir bin
+          javac -d bin src/main/java/org/example/Main.java
+          java -cp bin org.example.Main
