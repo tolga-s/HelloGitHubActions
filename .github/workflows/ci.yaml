@@ -21,5 +21,6 @@ jobs:
 
       - name: Compile and Run HelloWorld
         run: |
+          cd org/example/
           javac org.example.Main.java
           java org.example.Main
